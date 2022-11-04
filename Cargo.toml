@@ -1,0 +1,19 @@
+[package]
+name = "nexus"
+version = "0.1.0"
+edition = "2021"
+author = "Harry Johnson"
+about = "A CLI tool to interact with the Sonatype Nexus Repository API"
+
+[lib]
+name = "nexus_client"
+path = "src/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = {version = "3.2.19", features= ["derive"]}
+dirs = "4.0.0"
