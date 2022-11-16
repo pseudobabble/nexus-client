@@ -1,8 +1,13 @@
 * nexus-client
 ** Usage
 #+begin_src shell
-nexus on  master [?] is 📦 v0.1.0 via 🦀 v1.58.0-nightly
-[ 12:35:53 ] ❯ target/debug/nexus
+nexus-client on  master is 📦 v0.1.0 via 🦀 v1.60.0
+❯ cargo build
+<snip>...lots of output...</snip>
+
+nexus-client on  master is 📦 v0.1.0 via 🦀 v1.60.0
+❯ NEXUS_URL=your.nexus.url NEXUS_TOKEN_NAME=your.nexus.name NEXUS_TOKEN_SECRET=your.super.secret target/debug/nexus
+
 nexus 0.1.0
 
 USAGE:
